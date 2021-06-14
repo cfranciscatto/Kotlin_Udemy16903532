@@ -30,7 +30,9 @@ fun main(args: Array<String>) {
     //flowControl_for()
     //flowControl_while()
     //flowControl_breakContinue()
-    functions()
+    //functions()
+    //lambdas()
+    commonHFO()
 
 }
 
@@ -942,30 +944,42 @@ fun flowControl_breakContinue() {
 }
 
 fun functions() {
-    multiply(4,5)
-    multiply(4) // uses the default n2 value
+    multi(4,5)
+    multi(4) // uses the default n2 value
 
     val n1 = 6
     val n2 = 9
     println("calculateMultiply($n1) = ${calculateMultiply(n1)}")
     println("calculateMultiply($n1,$n2) = ${calculateMultiply(n1,n2)}")
 
-    val people: List<String> = listOf("Anna", "Bob", "Carol")
-    sayHello(people)
-    println(greeting(people))
-
     for (i in 1..3)
         println(sum(i*3, i*7))
+
+    val people: List<String> = listOf("Anna", "Bob", "Carol")
+    println(greeting(people))
 
     val products = hashMapOf(Pair("shoes", 29.99), Pair("socks", 5.99), Pair("jeans", 39.99))
     for (prod in products.keys) {
         println("Final price for $prod is ${calculateTax(products[prod])}")
     }
 
+    // overloading
+    println("Function overloading")
+    println(multiply(5))
+    println(multiply(3,4))
+
+    sayHello(people)
+
+    calculateTax(products)
+
+    //vararg -- many numbers of arguments of the same type
+    println("Function vararg")
+    sayHi("Joao", "Maria", "Jose")
+
 
 }
 
-fun multiply(n1: Int, n2: Int = 3) {
+fun multi(n1: Int, n2: Int = 3) {
     println("$n1 * $n2 = ${n1 * n2}")
 }
 
@@ -973,10 +987,6 @@ fun calculateMultiply(n1: Int, n2: Int = 3) : Int {
     return n1 * n2
 }
 
-fun sayHello(people: Collection<String>) {
-    for (person in people)
-        println("Hello $person")
-}
 
 fun greeting(people: Collection<String>) : String {
     var greeting = ""
@@ -985,10 +995,147 @@ fun greeting(people: Collection<String>) : String {
     return greeting
 }
 
-//handshort definition
+//function handshort definition
 fun sum(n1: Int, n2: Int) = n1 + n2;
 
 fun calculateTax(price: Double?) = price?.times(1.2)
+
+// function overloading
+fun multiply(n1: Int, n2: Int = 3) = n1 * n2
+
+fun multiply(n1: Int) = n1 * 2
+
+fun sayHello(people: Collection<String>) {
+    for (person in people)
+        sayHello(person)
+}
+
+fun sayHello(person: String) {
+    println("Hello $person")
+}
+
+fun calculateTax(products: HashMap<String, Double>) {
+    for (prod in products.keys) {
+        println("Final price for $prod is ${calculateTax(products[prod])}")
+    }
+}
+
+fun sayHi( vararg names: String) {
+    for (name in names) {
+        println("Hi $name")
+    }
+}
+
+fun lambdas() {
+    // myLambda -> function that takes a string and returns an Unit (void)
+    //              in         out     function code
+    val myLambda: (String) -> Unit = { name: String -> println("Hello $name") }
+
+    // higher older function -> function that takes another functions as a parameter
+    val people: ArrayList<String> = arrayListOf("Anna", "Bob", "Carol")
+
+    sayHelloHOF(people, myLambda)
+    sayHelloHOF(people, { name: String -> println("Hello $name") })
+    sayHelloHOF(people) { name: String -> println("Hello $name") }
+    sayHelloHOF(arrayListOf("Anna", "Bob", "Carol")) { name: String -> println("Hello $name") }
+
+    val numbers: ArrayList<Int> = arrayListOf(234,456,32,76,32,87)
+    println(numbers)
+    val numbersUpdated: ArrayList<Int> = updateHOF(numbers) {number -> number / 10}
+    println(numbersUpdated)
+
+    val greetings: ArrayList<String> = greetingHOF(people) {name -> "Hello $name"}
+    println(greetings)
+}
+
+fun sayHelloHOF(names: ArrayList<String>, doSomething: (String) -> Unit) {
+    for (name in names) {
+        doSomething(name)
+    }
+}
+
+fun updateHOF(numbers: ArrayList<Int>, lbd: (Int) -> Int): ArrayList<Int> {
+    for (i in 0 until numbers.size) {
+        if (numbers[i] % 2 == 0) {
+            numbers[i] = lbd(numbers[i])
+        }
+    }
+    return numbers;
+}
+
+fun greetingHOF(names: Collection<String>, lbd: (String) -> String): ArrayList<String> {
+    val messages: ArrayList<String> = arrayListOf<String>()
+    for (name in names) {
+        messages.add(lbd(name))
+    }
+    return messages;
+}
+
+fun commonHFO() {
+    println("------ commonHFO --------")
+    // higher older function -> function that takes another functions as a parameter
+    val people: ArrayList<String> = arrayListOf("Anna", "Bob", "Carol", "Donald", "Elliot", "Francis", "Gabriel")
+
+    println()
+    println("iteration")
+    people.forEach { println("Hello $it") }
+
+    println()
+    println("filter")
+    people.filter { it.length < 5 }
+            .forEach { println("Hello $it") }
+
+    println()
+    println("map - creates a new collection based on the lambda")
+    val sizes = people.map { it.length }
+    println(sizes)
+
+    println()
+    println("sortedBy")
+    val clients: List<String> = listOf("Anna", "Bob", "Carol", "Donald", "Elliot", "Francis", "Gabriel")
+    val sorted = clients.sortedBy { it.length }
+    println(sorted)
+
+    println()
+    println("maxBy")
+    val max = clients.maxBy { it.length }
+    println(max)
+
+    println()
+    println("minBy")
+    val min = clients.minBy { it.length }
+    println(min)
+
+    println()
+    println("print only the double digit integer")
+    val items: Set<Int> = setOf(3,65,34,76,4,8786,45,987,34,78,345,897,2,5,7,346)
+    println(items.filter {it in 10..99})
+
+    println()
+    println("print a list sorted by the last letter")
+    println(clients.sortedBy {it[it.length-1]})
+
+    println()
+    println("give a list of 3 digit integers, print out the integer that has the biggest middle digit")
+    val ints: List<Int> = listOf(786,450,987,354,748,315,897,287,534,712,346)
+    println(ints.maxBy {it.toString()[1].toInt()})
+    println(ints.maxBy {it / 10 % 10})
+
+    println()
+    println("give a collection of random integers, double the odds, halt the evens, print greater than 25")
+    val randomNumbers: Set<Int> = setOf(3,65,34,76,4,87,45,97,34,78,45,7,23,51,7,36)
+    val subset = randomNumbers.map {
+        if (it % 2 == 0)
+            it / 2
+        else
+            it * 2
+        }
+        .filter {it > 25}
+    println(subset)
+
+}
+
+
 
 //
 //
