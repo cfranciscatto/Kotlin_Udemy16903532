@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5699d000-821c-4af9-91c7-ba3e0efb2b94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/OtherConcepts.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/organisation/coolfeature/coolfeature.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/organisation/coolfeature/coolfeature.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/organisation/main/Packages.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/organisation/main/Packages.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Basics.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Basics.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ClassTypes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ClassTypes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Classes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Classes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Extensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Extensions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Generics.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Generics.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Hangman.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Hangman.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Interfaces.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Interfaces.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/OtherConcepts.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/OtherConcepts.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/StandardFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/StandardFunctions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/TicTacToe.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/TicTacToe.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +38,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1tXZBFU4paMXv5WA4V5IDGJogeU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -40,148 +66,88 @@
       <recent name="C:\Franciscatto\GitHub\Extensions\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OtherConcepts">
+  <component name="RunManager" selected="Kotlin.ClassType">
     <configuration name="Basics" type="JetRunConfigurationType">
-      <module name="Kotlin" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="BasicsKt" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <module name="Kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="ClassType" type="JetRunConfigurationType">
-      <module name="Kotlin" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="ClassTypesKt" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <module name="Kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Classes" type="JetRunConfigurationType">
-      <module name="Kotlin" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="ClassesKt" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <module name="Kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Extentions" type="JetRunConfigurationType">
-      <module name="Kotlin" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="ExtensionsKt" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <module name="Kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Generics" type="JetRunConfigurationType">
-      <module name="Kotlin" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="GenericsKt" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <module name="Kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="HangMan" type="JetRunConfigurationType">
-      <module name="Kotlin" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="HangmanKt" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <module name="Kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="OtherConcepts" type="JetRunConfigurationType">
-      <module name="Kotlin" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="OtherConceptsKt" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <module name="Kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Packages" type="JetRunConfigurationType">
-      <module name="Kotlin" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.organisation.main.PackagesKt" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <module name="Kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="StandardFunction" type="JetRunConfigurationType">
-      <module name="Kotlin" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="StandardFunctionsKt" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <module name="Kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="TicTacToe" type="JetRunConfigurationType">
-      <module name="Kotlin" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="TicTacToeKt" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <module name="Kotlin" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Extentions" />
-      <item itemvalue="Application.Generics" />
-      <item itemvalue="Application.OtherConcepts" />
-      <item itemvalue="Application.ClassType" />
-      <item itemvalue="Application.Basics" />
-      <item itemvalue="Application.TicTacToe" />
-      <item itemvalue="Application.StandardFunction" />
-      <item itemvalue="Application.Packages" />
-      <item itemvalue="Application.HangMan" />
-      <item itemvalue="Application.Classes" />
+      <item itemvalue="Kotlin.Basics" />
+      <item itemvalue="Kotlin.ClassType" />
+      <item itemvalue="Kotlin.Classes" />
+      <item itemvalue="Kotlin.Extentions" />
+      <item itemvalue="Kotlin.Generics" />
+      <item itemvalue="Kotlin.HangMan" />
+      <item itemvalue="Kotlin.OtherConcepts" />
+      <item itemvalue="Kotlin.Packages" />
+      <item itemvalue="Kotlin.StandardFunction" />
+      <item itemvalue="Kotlin.TicTacToe" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

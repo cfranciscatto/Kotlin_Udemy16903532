@@ -2,7 +2,8 @@ import kotlin.random.Random
 
 fun main (args: Array<String>) {
     isAsExample()
-
+    lateinitExample()
+    lazyExample()
 }
 
 fun isAsExample() {
@@ -39,6 +40,47 @@ fun isAsExample() {
     }
 
 }
+
+fun lateinitExample() {
+    // variáveis lateinit são definidas, porém inicializadas somente em um momento mais adiante.
+    // o desenvolvedor "garante" que vai inicializá-la antes de usá-la.
+    // usada geralmente quando seu valor depende de outros processamentos
+
+    lateinit var service: NetworkService
+    //println(service) //exception
+    service = getNetworkService()
+    println(service)
+
+    val country = Country().apply { setName("Germany") }
+    println("Hello ${country.getName()}")
+
+    lateinit var message : String
+    var primeNumbers = getPrimeNumbers()
+    message = "The chosen prime number is ${selectPrimeNumbers(primeNumbers)}"
+    println(message)
+}
+
+
+fun lazyExample() {
+    // variáveis lazy são inicializadas somente quando necessárias
+    // usada para variáveis com grande quantidade de dados com objetivo de economizar memória
+
+    val bigBuffer: String by lazy {"big data"}
+    if (Random.nextInt() % 2 == 0) {
+        println(bigBuffer)  // variavel é carregada na memória somente neste ponto
+    }
+
+    val list by lazy {getPrimeNumbers()}
+    println("Print prime numbers")
+    println(list)
+}
+
+fun getPrimeNumbers(): List<Int> {
+    println("getPrimeNumbers")
+    return listOf(1,2,3,5,7,11,13,17,19)
+}
+
+fun selectPrimeNumbers(primes: List<Int>) = primes.random()
 
 fun getCar(): Car1 = BMW()
 
@@ -93,4 +135,14 @@ fun getAnimals(): ArrayList<DomesticAnimal> {
             Cat1())
     }
     return animals
+}
+
+class Country() {
+    private lateinit var name: String
+
+    fun setName(name: String) {
+        this.name = name
+    }
+
+    fun getName() = name
 }
